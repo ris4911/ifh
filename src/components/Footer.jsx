@@ -39,7 +39,7 @@ const Footer = () => {
                   >
                     <Link href={link?.name}>{link?.name}</Link>
                   </li>
-                )
+                ),
               )}
             </ul>
           </div>
@@ -73,14 +73,12 @@ const Footer = () => {
           <p>Institute for Humanities © 2024 All Rights Reserved</p>
           <div className="mt-2 md:mt-0">
             {footerLinks?.map((link, index) => (
-              <>
-                <Link key={`${link?.name} - ${index}`} href={link?.href}>
-                  {link?.name}
-                </Link>
+              <div key={`footer-${link?.name}`}>
+                <Link href={link?.href}>{link?.name}</Link>
                 {index !== footerLinks.length - 1 && (
                   <span className="mx-2">|</span>
                 )}
-              </>
+              </div>
             ))}
           </div>
           {/* Social Icons */}
