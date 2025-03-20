@@ -20,7 +20,7 @@ const Cards = () => {
           ))}
         </div>
         <div className="button-wrapper flex justify-center pt-10">
-          <Button href="#" text="View all courses" />
+          <Button href="#" title="View all courses" type={"primary"} />
         </div>
       </div>
     </section>

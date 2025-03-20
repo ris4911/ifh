@@ -1,26 +1,34 @@
 import Link from "next/link";
 import Image from "next/image";
 
+interface ButtonProps {
+  title: string;
+  href: string;
+  type: "primary" | "secondary"; // Define button types
+}
+
 const Button = ({
   href = "",
-  text = "View details",
-  textSize = "lg",
-  iconSrc = "/assets/icons/right-arrow.svg",
-  iconAlt = "View details",
-  buttonTextColor = "DD5D59",
-  buttonBgColor = "transparent",
-  borderColor = "DD5D59",
-  rounded = "50",
-  paddingY = "py-[11px]",
-  paddingX = "px-8",
-  additionalClasses = "",
-}) => {
+  title = "View details",
+  type = "primary",
+}: ButtonProps) => {
+  const buttonStyles = {
+    primary:
+      "text-[#DD5D59] border-[#DD5D59] bg-transparent hover:bg-[#DD5D59] hover:text-white",
+    secondary: "",
+  };
   return (
     <Link
-      className={`flex justify-center text-${textSize} items-center border border-${borderColor} text-${buttonTextColor} transition ${paddingY} ${paddingX} rounded-${rounded} ${additionalClasses} ${buttonBgColor}`}
+      className={`flex justify-center text-lg items-center border transition px-8 py-[11px] rounded-50 ${buttonStyles[type]}`}
       href={href}
     >
-      {text} <Image src={iconSrc} alt={iconAlt} height={24} width={25} />
+      {title}{" "}
+      <Image
+        src="/assets/icons/right-arrow.svg"
+        alt={title}
+        height={24}
+        width={25}
+      />
     </Link>
   );
 };

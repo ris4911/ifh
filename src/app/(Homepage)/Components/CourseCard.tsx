@@ -33,7 +33,7 @@ const CourseCard = ({ course }: { course: Course }) => {
       )}
       {course?.discountedPrice && (
         <div className="button-wrapper pt-10">
-          <Button href="#" />
+          <Button href="#" type={"primary"} title="View details" />
         </div>
       )}
     </div>

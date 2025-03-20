@@ -1,9 +1,9 @@
 import { VideoType } from "@/utils/types";
 
-const Video = ({ src, height }: VideoType) => {
+const Video = ({ src, bannerVideo }: VideoType) => {
   return (
     <video
-      className={`w-full object-cover h-[${height}px]`}
+      className={`w-full object-cover ${bannerVideo ? "h-[660px]" : ""}`}
       autoPlay
       muted
       loop

@@ -9,6 +9,7 @@ export type VideoType = {
   src: string;
   height?: number;
   width?: number;
+  bannerVideo?: boolean
 };
 
 export type Course = {
