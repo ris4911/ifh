@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --font-roboto: "Roboto", sans-serif;
-  --background: #ffffff;
-  --body-text-color: #00000073;
+  --font-red-hat-display: "Red_Hat_Display", sans-serif;
+  --background: #FFFFFF;
+  --body-text-color: #181818;
 }
 
 * {
@@ -14,9 +14,10 @@
   box-sizing: border-box;
 }
 body {
-  font-family: var(--font-roboto), sans-serif;
-  font-size: 14px;
+  font-family: var(--font-red-hat-display), sans-serif;
+  font-size: 16px;
   line-height: 24px;
+  font-weight: 500;
   color: var(--body-text-color);
   background: var(--background);
   scroll-behavior: smooth;

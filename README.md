@@ -1,4 +1,4 @@
-# Event Management UI (Jira Clone)
+# IFH (INSTITUTE FOR HUMANITIES)
 
 ## Tech Stack
 
@@ -14,13 +14,13 @@
 1. Clone the repository:
 
 ```bash
-    git clone https://github.com/ris4911/event-management
+    git clone
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-    cd event-management
+    cd
 ```
 
 3. Install the dependencies:
