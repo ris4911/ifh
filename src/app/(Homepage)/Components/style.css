@@ -1,0 +1,35 @@
+.our-best-cource-slider .swiper-wrapper{
+    padding-bottom: 60px;
+}
+.our-best-cource-slider .swiper-pagination-bullet{
+    background-color: gray;
+    width: 15px;
+    height: 6px;
+    border-radius: 20px;
+}
+.our-best-cource-slider .swiper-pagination-bullet.swiper-pagination-bullet-active{
+    width: 49px;
+    height: 6px;
+    background-color: #4971B2;
+}
+.swiper-wrapper{
+    padding-top: 40px;
+}
+.videos-slider .swiper-button-prev, .videos-slider .swiper-button-next{
+    background-color: #4971B2;
+    color: #fff;
+    box-shadow: 4px 4px 12px 0px #0000000D;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    top: 25px;
+}
+.videos-slider .swiper-button-prev{
+    right: 60px;
+    left: auto;
+    background-color: #fff;
+    color: #AAAAAA;
+}
+.videos-slider .swiper-button-next:after, .videos-slider .swiper-button-prev:after{
+    font-size: 14px;
+}

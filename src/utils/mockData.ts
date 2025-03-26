@@ -96,6 +96,22 @@ export const courses: Course[] = [
     discountedPrice: 7999,
     validity: "Valid for 180 days",
   },
+  {
+    id: 5,
+    title: "Foundation Course for Humanities",
+    image: "/assets/images/card-4.png",
+    originalPrice: 14999,
+    discountedPrice: 7999,
+    validity: "Valid for 180 days",
+  },
+  {
+    id: 6,
+    title: "Foundation Course for Humanities",
+    image: "/assets/images/card-4.png",
+    originalPrice: 14999,
+    discountedPrice: 7999,
+    validity: "Valid for 180 days",
+  },
 ];
 
 export const videoModule: Course[] = [
@@ -119,6 +135,18 @@ export const videoModule: Course[] = [
   },
   {
     id: 4,
+    title: "CUET (PG) Political Science PYQ | International Relations",
+    videoUrl: "",
+    image: "/assets/images/card-4.png",
+  },
+  {
+    id: 5,
+    title: "CUET (PG) Political Science PYQ | International Relations",
+    videoUrl: "/assets/videos/banner-video.mp4",
+    image: "",
+  },
+  {
+    id: 6,
     title: "CUET (PG) Political Science PYQ | International Relations",
     videoUrl: "",
     image: "/assets/images/card-4.png",
